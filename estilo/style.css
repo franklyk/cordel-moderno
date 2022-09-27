@@ -1,0 +1,115 @@
+@charset "UTF8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & family= Sriracha & display=swap');
+
+@font-face {
+    font-family: 'America';
+    src: url(../fontes/American\ Signs.otf) format('opentype');
+}
+ 
+@font-face {
+    font-family: 'Black-Parade';
+    src: url(../fontes/Black\ Parade\ -\ Personal\ Use.otf) format('opentype');
+}
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'America', cursiva;
+    --font3: 'Black-Parade', cursiva;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+html, body{
+    font-family: var(--font1);
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    font-size: 10vw;
+    font-family: var(--font2);
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 1px;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+    
+}
+section {
+    font-size: 7vw;
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.3em;
+    padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 1em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(88, 86, 86);
+    color: white;
+    box-shadow: inset 6px 6px 13px 5px rgba(0, 0, 0, 0.603);
+    
+    background-attachment: fixed;
+}
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.67);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.504);
+}
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 30px;
+    color: white;
+    background-color: black;
+}
